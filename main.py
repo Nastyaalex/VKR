@@ -38,7 +38,7 @@ def hello():
             message += "Некорректный ввод."
 
         cost = get_prediction(area1,area2,area3,area4,area5,area6,area7,area8,area9,area10,area11,area12)
-        message += f"Прочность при растяжении, МПа равна {cost} ."
+        message += f"Модуль упругости при растяжении, МПа равна {cost} ."
     return render_template("index.html", message=message)
 
 if __name__ == '__main__':
